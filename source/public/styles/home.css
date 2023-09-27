@@ -1,0 +1,57 @@
+@import url('../libs/fonts/Allerta-Regular.ttf');
+
+:root{
+    --text-sm: 10px;
+    --text: 12px;
+    --text-md: 14px;
+    --text-lg: 18px;
+    --text-xl: 24px;
+    --fondo: white
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--fondo);
+    font-size: var(--text);
+    font-family: 'Allerta-Regular', Arial, Helvetica, sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background: linear-gradient(to bottom, #8b451352, transparent);
+    height: 160px;
+}
+header .nav {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 98%;
+    padding: 12px;
+    background: linear-gradient(to bottom, #8b451352, transparent);
+}
+header .nav .logo-myw{
+    font-size: var(--text-xl);
+}
+header .nav .menu-myw{
+    display: flex;
+    gap: 15px;
+    flex-wrap: nowrap;
+}
+
+@media (max-width: 640px ){
+    header .nav .menu-myw{
+        flex-direction: column;
+    }
+}
